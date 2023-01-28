@@ -35,13 +35,26 @@ public class Main {
         devAllyson.setNome("Allyson");
         devAllyson.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos de Allyson" + devAllyson.getConteudosInscritos());
+        devAllyson.progredir();
+        devAllyson.progredir();
+        System.out.println("-");
+        System.out.println("Conteúdos Inscritos de Allyson" + devAllyson.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos de Allyson" + devAllyson.getConteudosConcluidos());
+        System.out.println("XP:" + devAllyson.calcularTotalXP());
+
+        System.out.println("---------");
 
         Dev devJunior = new Dev();
         devJunior.setNome("Junior");
         devJunior.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos de Junior" + devJunior.getConteudosInscritos());
+        devJunior.progredir();
+        devJunior.progredir();
+        devJunior.progredir();
+        System.out.println("-");
+        System.out.println("Conteúdos Inscritos de Junior" + devJunior.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos de Junior" + devJunior.getConteudosConcluidos());
+        System.out.println("XP:" + devJunior.calcularTotalXP());
 
 
     }
